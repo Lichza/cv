@@ -1,0 +1,11 @@
+{
+"Skills": {
+	"Skill1": "Quantitative data analysis",
+	"Skill2": "Data manipulation & wrangling",
+	"Skill3":" Advanced statistical & machine learning",
+	"Skill4": "R",
+	"Skill5": "SQL",
+	"Skill6": "Psychological research (experimental) from conceptualisation to completion",
+	"Skill7": "Survey design"
+}
+}

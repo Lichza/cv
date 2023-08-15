@@ -1,0 +1,7 @@
+{
+"Contact info": {
+"Email": "alicia.nortje@gmail.com",
+"Cellphone": "+27 83 688 28 28",
+"Linkedin": "linkedin.com/in/alicianortje"
+}
+}

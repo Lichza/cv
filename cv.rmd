@@ -1,0 +1,257 @@
+---
+title: "Lijia Yu's resume"
+author: Alicia Nortje-da Conceicao
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: TRUE
+# uncomment this line to produce HTML and PDF in RStudio:
+#knit: pagedown::chrome_print
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+source("./src/src_functions.R")
+source("./src/libraries.R")
+data_list <- r_cv_getfilelist()
+```
+
+
+Aside
+================================================================================
+
+Contact Info {#contact}
+--------------------------------------------------------------------------------
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+
+if (match("contact_info", tolower(names(data_list)))>0) {
+  index <- match("contact_info", tolower(names(data_list)))
+  data_contact_info <- unlist(data_list[[index]],",")
+}
+```
+
+
+- <i class="fa fa-envelope"></i> `r data_contact_info[[grep("email", tolower(names(data_contact_info)))]]`
+- <i class="fa fa-linkedin"></i> `r data_contact_info[[grep("linkedin", tolower(names(data_contact_info)))]]`
+- <i class="fa fa-phone"></i> `r data_contact_info[[grep("cellphone", tolower(names(data_contact_info)))]]`
+- For more information, please contact me via email.
+
+
+Skills {#skills}
+--------------------------------------------------------------------------------
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+
+if (match("skills", tolower(names(data_list)))>0) {
+  index <- match("skills", tolower(names(data_list)))
+  data_skills <- unlist(data_list[[index]],",")
+}
+```
+
+<font size="2">
+
+- `r data_skills[grep("skill1", tolower(names(data_skills)))]`
+
+- `r data_skills[grep("skill2", tolower(names(data_skills)))]`
+
+- `r data_skills[grep("skill3", tolower(names(data_skills)))]`
+
+- `r data_skills[grep("skill4", tolower(names(data_skills)))]`
+
+- `r data_skills[grep("skill5", tolower(names(data_skills)))]`
+
+- `r data_skills[grep("skill6", tolower(names(data_skills)))]`
+
+- `r data_skills[grep("skill7", tolower(names(data_skills)))]`
+
+</font size="2">
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown).
+
+Last updated on `r Sys.Date()`.
+
+
+
+Main
+================================================================================
+
+Alicia Nortje-da Conceicao {#title}
+--------------------------------------------------------------------------------
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+if (match("bio", tolower(names(data_list)))>0) {
+  index <- match("bio", tolower(names(data_list)))
+  data_skills <- unlist(data_list[[index]],",")
+}
+```
+
+### `r data_skills[[grep("tagline", tolower(names(data_skills)))]]` 
+
+`r data_skills[[grep("description", tolower(names(data_skills)))]]` 
+
+
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+### Univeristy of Cape Town
+
+PhD in Psychology (Eyewitness memory and face recognition)
+
+Cape Town, South Africa
+
+2018
+
+Thesis: Dyadic wavelet and its application in edge detection
+
++	Completed Masters-level course: Multivariate Statistical Methods (2013)
+
+### University of Cape Town
+
+MA in Psychology Research
+
+Cape Town, South Africa
+
+2011
+
+Thesis: 
+
++ Completed Clinical Neuropsychology coursework
+
++ Concurrently registered in undergraduate Linguistics (average 85%) through UNISA
+
+### University of Cape Town
+
+Honours in Psychology Research
+
+Cape Town, South Africa
+
+2007
+
+Thesis: 
+
+### University of South Africa
+
+Bachelors Degree in Psychological Counselling
+
+Cape Town, South Africa
+
+2007
+
+Thesis: 
+
+
+Research Experience {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+### Graduate Research Assistant
+
+Beijing Institute of Genomics, Chinese Academy of Sciences
+
+Beijing, China
+
+2011 - 2014
+
+- Performed computational biology research towards understanding regulation of alternative splicing in human and mouse transcriptome.
+- Found EGFR pathway related mutations, aimed to understand the impacts of cancer mutations on EGFR signaling pathway.
+
+### Bioinformatican
+
+My Health Gene Technology Co., Ltd.
+
+Beijing, China
+
+2015 - 2016
+
+- Investigated how cancer cells spread to other parts of the body at the single cell level.
+
+### Visiting Scientist
+
+University of Alabama at Birmingham
+
+AL, USA
+
+2016 - 2018
+
+- Investigated the role of mitochondria in development of cancer.
+- Investigated the evolution of genome architecture and its role in important evolutionary events.
+- Detected thrombotic thrombocytopenic purpura related mutations in mutiple patients' blood genome.
+  
+
+Professional Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+### Data Scientist, intern
+
+SupStat Inc.
+
+Beijing, China
+
+2014
+
+::: concise
+- Taught R language to beginners. 
+- Wrote Shiny app demos.
+- Converted statistical tutorials from SPSS to R language.
+:::
+
+### Bioinformatician
+
+My Health Gene Technology Co., Ltd.
+
+Beijing, China
+
+2015 - 2016
+
+::: concise
+- Analyzed whole-exome sequencing data. 
+- Wrote analysis pipelines of ChIP-seq, single cell DNA-seq and single cell RNA-seq.
+- Studied tumor metastasis and wrote research reports. 
+- Also did case studies to identify the genetic defect causing rare disease.
+:::
+
+
+Teaching Experience {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+### Introduction to R Language for Beginners.
+
+Instructor of R and Data Mining Training Courses at SupStat Inc.
+
+Beijing, China
+
+2014
+
+### Computational Biology and Bioinformatics.
+
+Teaching assistant of GBS CB2-201 courses at UAB
+
+AL, USA
+
+2016 - 2017
+
+
+Selected Publications and Posters {data-icon=file}
+--------------------------------------------------------------------------------
+
+### Genetic and epigenetic signals are found predictive to the distribution of intra-individual divergence of alternative splicing.
+
+Poster for 2013 International Conference of Genomics
+
+Qingdao, China
+
+2014
+
+**Yu L**, Chen B, Zhang Z.
+
+### ESCRT-0 complex modulates Rbf mutant cell survival by regulating Rhomboid endosomal trafficking and EGFR signaling.
+
+J Cell Sci. 2016 May 15;129(10):2075-84.
+
+N/A
+
+2016 
+
+Sheng Z, **Yu L**, Zhang T, Pei X, Li X, Zhang Z and Du W. 

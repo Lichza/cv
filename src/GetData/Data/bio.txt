@@ -1,0 +1,6 @@
+{
+"bio": {
+	"tagline": "Behavioural Data Scientist | Applied Cognitive Researcher | Psychologist | Data Analyst | I like analysing big sets of behavioural data to answer questions",
+	"description": "Data scientist with a focus on human behaviour. Trained in applied psychological/behavioural science with 2 years experience in Market Research, and 5 + years of experience in experimental/laboratory research. Experience in customer retention behaviour, conversion funnels of customer retention, and quality of survey data; academic specialisation in applied cognitive sciences/psychology. Highly skilled in quantitative data analysis and R, and expertise in designing experiments and applying pothesis testing to answer various research questions. Loves data about human behaviour, enjoys solving problems, values teamwork, and would prefer a hybrid work environment with in-person contact and collaboration."
+	}
+}

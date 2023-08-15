@@ -1,0 +1,41 @@
+{
+"PhD": {
+"Degree": "PhD",
+"Field": "Psychology",
+"Year Started": "2012",
+"Year Ended": "2018",
+"University": "University of Cape Town",
+"Thesis Topic": "Investigating facial recognition for multiple-perpetrator crimes",
+"Other": "2013 Completed Master-level course: Multivariate Statistics in R"
+},
+"Masters": {
+"Degree": "Masters",
+"Field": "Psychology",
+"Year Started": "2008",
+"Year Ended": "2011",
+"University": "University of Cape Town",
+"Thesis Topic": "Face-off: Automatic versus controlled processing. Does a shift in processing affect facial processing?",
+"Other 1": "Neuropsychology coursework",
+"Other 2": "Concurrently registered in undergraduate Linguistics at UNISA (85% +)",
+"Other 3": "Graduated with distinction"
+},
+"Honours": {
+"Degree": "Honours",
+"Field": "Psychology",
+"Year Started": "2007",
+"Year Ended": "2007",
+"University": "University of Cape Town",
+"Thesis Topic": "The relationship between stress, cortisol levels and Alzheimer’s disease",
+"Other": ""
+},
+"BA": {
+"Degree": "Bachelor of Arts",
+"Field": "Psychology",
+"Year Started": "2004",
+"Year Ended": "2006",
+"University": "University of South Africa",
+"Thesis Topic": "",
+"Other 1": "Complete addition modules beyond what was required for degree",
+"Other 2": "Graduated cum laude"
+}
+}
